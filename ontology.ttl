@@ -88,7 +88,7 @@
 :isAccountableFor rdf:type owl:ObjectProperty ;
                   rdfs:domain :AccountableAgent ;
                   rdfs:range <https://w3id.org/ep-plan#Entity> ;
-                  rdfs:comment "A relation that links accountable agents to entities tehy are accountable for." ;
+                  rdfs:comment "A relation that links accountable agents to entities they are accountable for." ;
                   rdfs:label "is accountable for" .
 
 
@@ -162,7 +162,7 @@
 :AccountableAgent rdf:type owl:Class ;
                   rdfs:subClassOf <https://w3id.org/ep-plan#Agent> ,
                                   :InformationElement ;
-                  rdfs:comment "An agent (typpically a human)  that can be held accountable for his/her actions." ;
+                  rdfs:comment "An agent (typically a human)  that can be held accountable for his/her actions." ;
                   rdfs:label "Accountable Agent" .
 
 
@@ -201,14 +201,14 @@
                                           owl:onProperty <https://w3id.org/ep-plan#correspondsToVariable> ;
                                           owl:allValuesFrom :AccountableResult
                                         ] ;
-                        rdfs:comment "A collection of pieces of information (InformationElements) which corresponds to a variable of type  AccountableResult. The collection represents the actual piece of provenance infomration documenting a specific AccountableResult durring a single plan execution." ;
+                        rdfs:comment "A collection of pieces of information (InformationElements) which corresponds to a variable of type  AccountableResult. The collection represents the actual piece of provenance information documenting a specific AccountableResult during a single plan execution." ;
                         rdfs:label "Information Realization" .
 
 
 ###  https://w3id.org/sao#System
 :System rdf:type owl:Class ;
         rdfs:subClassOf :AccountableObject ;
-        rdfs:comment "A system that the collected accoutability information is about." ;
+        rdfs:comment "A system that the collected accountability information is about." ;
         rdfs:label "System" .
 
 

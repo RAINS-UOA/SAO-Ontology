@@ -75,10 +75,10 @@
     "id" : "11",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
+    "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "7",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
     "id" : "18",
@@ -163,19 +163,6 @@
     "id" : "11",
     "superClasses" : [ "6" ]
   }, {
-    "iri" : "https://w3id.org/sao#System",
-    "baseIri" : "https://w3id.org/sao",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "System",
-      "undefined" : "System"
-    },
-    "comment" : {
-      "undefined" : "A system that the collected accoutability information is about."
-    },
-    "id" : "14",
-    "superClasses" : [ "2" ]
-  }, {
     "iri" : "https://w3id.org/sao#AccountableAgent",
     "baseIri" : "https://w3id.org/sao",
     "instances" : 0,
@@ -184,10 +171,23 @@
       "undefined" : "Accountable Agent"
     },
     "comment" : {
-      "undefined" : "An agent (typpically a human)  that can be held accountable for his/her actions."
+      "undefined" : "An agent (typically a human)  that can be held accountable for his/her actions."
     },
     "id" : "7",
     "superClasses" : [ "19", "11" ]
+  }, {
+    "iri" : "https://w3id.org/sao#System",
+    "baseIri" : "https://w3id.org/sao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "System",
+      "undefined" : "System"
+    },
+    "comment" : {
+      "undefined" : "A system that the collected accountability information is about."
+    },
+    "id" : "14",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://w3id.org/ep-plan#MultiVariable",
     "baseIri" : "https://w3id.org/ep-plan",
@@ -230,7 +230,7 @@
       "undefined" : "Information Realization"
     },
     "comment" : {
-      "undefined" : "A collection of pieces of information (InformationElements) which corresponds to a variable of type  AccountableResult. The collection represents the actual piece of provenance infomration documenting a specific AccountableResult durring a single plan execution."
+      "undefined" : "A collection of pieces of information (InformationElements) which corresponds to a variable of type  AccountableResult. The collection represents the actual piece of provenance information documenting a specific AccountableResult during a single plan execution."
     },
     "id" : "10",
     "superClasses" : [ "24" ]
@@ -369,14 +369,14 @@
     "attributes" : [ "object" ],
     "id" : "5"
   }, {
-    "iri" : "https://w3id.org/ep-plan#correspondsToVariable",
-    "baseIri" : "https://w3id.org/ep-plan",
-    "range" : "1",
+    "iri" : "http://www.w3.org/ns/prov#hadMember",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "11",
     "label" : {
-      "IRI-based" : "correspondsToVariable"
+      "IRI-based" : "hadMember"
     },
     "domain" : "10",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "9"
   }, {
     "range" : "6",
@@ -432,7 +432,7 @@
     },
     "domain" : "12",
     "subproperty" : [ "28" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "27"
   }, {
     "iri" : "https://w3id.org/ep-plan#hasCorrespondingEntity",
@@ -442,17 +442,17 @@
       "IRI-based" : "hasCorrespondingEntity"
     },
     "domain" : "1",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "29"
   }, {
-    "iri" : "http://www.w3.org/ns/prov#hadMember",
-    "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "11",
+    "iri" : "https://w3id.org/ep-plan#correspondsToVariable",
+    "baseIri" : "https://w3id.org/ep-plan",
+    "range" : "1",
     "label" : {
-      "IRI-based" : "hadMember"
+      "IRI-based" : "correspondsToVariable"
     },
     "domain" : "10",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "30"
   }, {
     "iri" : "https://w3id.org/sao#isAccountableFor",
@@ -464,7 +464,7 @@
     },
     "domain" : "7",
     "comment" : {
-      "undefined" : "A relation that links accountable agents to entities tehy are accountable for."
+      "undefined" : "A relation that links accountable agents to entities they are accountable for."
     },
     "attributes" : [ "object" ],
     "id" : "8"

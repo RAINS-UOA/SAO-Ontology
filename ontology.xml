@@ -144,7 +144,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/sao#isAccountableFor">
         <rdfs:domain rdf:resource="https://w3id.org/sao#AccountableAgent"/>
         <rdfs:range rdf:resource="https://w3id.org/ep-plan#Entity"/>
-        <rdfs:comment>A relation that links accountable agents to entities tehy are accountable for.</rdfs:comment>
+        <rdfs:comment>A relation that links accountable agents to entities they are accountable for.</rdfs:comment>
         <rdfs:label>is accountable for</rdfs:label>
     </owl:ObjectProperty>
     
@@ -268,7 +268,7 @@
     <owl:Class rdf:about="https://w3id.org/sao#AccountableAgent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ep-plan#Agent"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/sao#InformationElement"/>
-        <rdfs:comment>An agent (typpically a human)  that can be held accountable for his/her actions.</rdfs:comment>
+        <rdfs:comment>An agent (typically a human)  that can be held accountable for his/her actions.</rdfs:comment>
         <rdfs:label>Accountable Agent</rdfs:label>
     </owl:Class>
     
@@ -329,7 +329,7 @@
                 <owl:allValuesFrom rdf:resource="https://w3id.org/sao#AccountableResult"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A collection of pieces of information (InformationElements) which corresponds to a variable of type  AccountableResult. The collection represents the actual piece of provenance infomration documenting a specific AccountableResult durring a single plan execution.</rdfs:comment>
+        <rdfs:comment>A collection of pieces of information (InformationElements) which corresponds to a variable of type  AccountableResult. The collection represents the actual piece of provenance information documenting a specific AccountableResult during a single plan execution.</rdfs:comment>
         <rdfs:label>Information Realization</rdfs:label>
     </owl:Class>
     
@@ -340,7 +340,7 @@
 
     <owl:Class rdf:about="https://w3id.org/sao#System">
         <rdfs:subClassOf rdf:resource="https://w3id.org/sao#AccountableObject"/>
-        <rdfs:comment>A system that the collected accoutability information is about.</rdfs:comment>
+        <rdfs:comment>A system that the collected accountability information is about.</rdfs:comment>
         <rdfs:label>System</rdfs:label>
     </owl:Class>
 </rdf:RDF>

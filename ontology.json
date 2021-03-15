@@ -117,7 +117,7 @@
   "@id" : "https://w3id.org/sao#AccountableAgent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "An agent (typpically a human)  that can be held accountable for his/her actions."
+    "@value" : "An agent (typically a human)  that can be held accountable for his/her actions."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Accountable Agent"
@@ -166,7 +166,7 @@
   "@id" : "https://w3id.org/sao#InformationRealization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A collection of pieces of information (InformationElements) which corresponds to a variable of type  AccountableResult. The collection represents the actual piece of provenance infomration documenting a specific AccountableResult durring a single plan execution."
+    "@value" : "A collection of pieces of information (InformationElements) which corresponds to a variable of type  AccountableResult. The collection represents the actual piece of provenance information documenting a specific AccountableResult during a single plan execution."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Information Realization"
@@ -182,7 +182,7 @@
   "@id" : "https://w3id.org/sao#System",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A system that the collected accoutability information is about."
+    "@value" : "A system that the collected accountability information is about."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "System"
@@ -266,7 +266,7 @@
   "@id" : "https://w3id.org/sao#isAccountableFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A relation that links accountable agents to entities tehy are accountable for."
+    "@value" : "A relation that links accountable agents to entities they are accountable for."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/sao#AccountableAgent"
